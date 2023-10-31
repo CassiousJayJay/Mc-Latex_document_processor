@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\author{CASSIOUS KABWE}
+\title{Statistical packages midterm}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{section 1:  Non-parametric Statistics (8.1, 8.2, 8.3)}
+\begin{enumerate}
+	\item Which of the following test is used to compare two independent samples when the dat is not normally distributed and the variances are not equal? \par 
+    \textcolor{red}{\textit{Wilcoxon Rank-Sum Testt}}
+        
+
+    \item The Wilocoxon Rank-Sum Test is a non paramatic alternative to which paramatic tests? \par 
+        \textcolor{red}{\textit{t-test}}
+    
+    \item In a Chi-square Test for Independence, what is the null hypothesis? \par 
+        \textcolor{red}{\textit{The variables are independent}}
+
+    \item You want to compare the median income of two different groups of people. Which non-paramatic test should you use? \par
+        \textcolor{red}{\textit{Mann-Whitney U Test}}
+
+    \section{Section 2: Advanced Data Analysis Techniques (Chapter 9)}
+
+    \item In logistic regression, what type of variable is the dependent variable (the variable you are trying to predict)? \par
+    \textcolor{red}{\textit{Categorical variable}}
+
+    \item Which library is commonly used for time series analysis in Python? \par
+    \textcolor{red}{\textit{Pandas}}
+    
+
+    \item In time series analysis, what is the moving average used for? \par
+    \textcolor{red}{\textit{To smooth out noise and identify trends}}
+
+    \item Which of the following is a supervised learning algorithm used for binary classification in scikit-learn? \par
+    \textcolor{red}{\textit{K-Nearest Neighbors (KNN)}} 
+
+    \item What is the purpose of training and testing datasets in machine learning? \par
+    \textcolor{red}{\textit{To evaluate the model's perfomance and generalization}}
+
+    \item Which of the following statements is true about overfitting in machine learning?
+    \textcolor{red}{\textit{Overfitting ocurs when the models perfoms well on the training data but poorly on the testing data}}
+
+
+    \item Write a Python code to perform the Kruskal-Walls Test on the following using Scipy library:
+    \begin{verbatim}
+        data-group1 = [23, 29, 32, 22, 28]
+        data-group2 = [19, 18, 24, 25, 21]
+        data-group3 = [16, 15, 14, 17, 20] 
+    \end{verbatim}
+
+    \begin{verbatim}
+        from scipy.stats import kruskal
+
+        data_group1 = [23, 29, 32, 22, 28]
+        data_group2 = [19, 18, 24, 25, 21]
+        data_group3 = [16, 15, 14, 17, 20]
+
+        stat, p = kruskal(data_group1, data_group2, data_group3)
+
+        print(p)
+    \end{verbatim}
+
+\end{enumerate}
+
+\end{document}
